@@ -36,7 +36,7 @@ HuggingFace_model_results = pipeline("ner", model = "blaze999/Medical-NER")
 createNER_button = st.button("Create NER tags")
 
 col1, col2 = st.columns([1,1.5])
-col1.subheader("myDemo Model")
+col1.subheader("Demo Model")
 col2.subheader("blaze999/Medical-NER")
 
 if uploaded_file is not None and createNER_button == True: 
@@ -47,7 +47,7 @@ if uploaded_file is not None and createNER_button == True:
     #st.write("Your input is: ", string_data)
     with col1: 
         #st.write(my_model_results(string_data))  
-        #col1.subheader("myDemo Model")
+        #col1.subheader("Demo Model")
         for result in my_model_results(string_data): 
             st.write(result['word'], result['entity'])
             dict1["word"].append(result['word']), dict1["entity"].append(result['entity'])         
