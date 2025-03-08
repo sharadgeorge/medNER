@@ -1,7 +1,6 @@
 import streamlit as st
 
 # --- SHARED ON ALL PAGES ---
-st.logo(image=":material/medical_information:")
 #st.logo("images/medical_information_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png")
 st.sidebar.text("Project by SPG")
 
